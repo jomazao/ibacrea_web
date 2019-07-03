@@ -2,12 +2,14 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>Ibacrea</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -19,20 +21,44 @@
         crossorigin="anonymous"></script>
 </head>
 
+
 <style>
-        .fa {
-          color: white;
-          padding: 20px;
-          font-size: 30px;
-          width: 50px;
-          text-align: center;
-          text-decoration: none;
-          margin: 5px 2px;
-        }
+    .fa2 {
+        color: white;
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+    }
+
+    .float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
+
+    .my-float {
+        margin-top: 16px;
+    }
 </style>
 
 <body style="background-color:#3F3756">
 
+    <a href="https://api.whatsapp.com/send?phone=573058176719&text=Hola,%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20acerca%20de"
+        class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
 
 
     <div class="d-flex flex-column sticky-footer-wrapper">
@@ -43,8 +69,8 @@
                 <img class="img-fluid" src="https://i.ibb.co/pRb0nB4/logo.png" style="max-width:100%">
 
                 <p style="color: white">Soluciones simples</p>
-                <a href="https://www.facebook.com/ibacrea" class="fa fa-facebook"></a>
-              
+                <a href="https://www.facebook.com/ibacrea" target="blank" class="fa fa2 fa-facebook"></a>
+
             </div>
             <div class="row justify-content-center">
                 <div class="card text-white  mb-3 col-sm-4"
@@ -52,19 +78,19 @@
                     <div class="card-header" style="text-align: center">VACANTE</div>
                     <div class="card-body">
                         <h5 class="card-title">Secretaria administrativa</h5>
-                        <p class="card-text">$1.000.000 + Salud y pensión</p> 
-                        <a   class="btn btn-primary " href="https://forms.gle/Bh5KfiYBrpJLCCW67">Registro aquí</a>
+                        <p class="card-text">$1.000.000 + Salud y pensión</p>
+                        <a class="btn btn-primary " target="blank" href="https://forms.gle/Bh5KfiYBrpJLCCW67">Registro aquí</a>
                     </div>
                 </div>
                 <div class="card text-white  mb-3 col-sm-4"
-                style="max-width: 18rem; background-color: #663F3F; margin: 1%">
-                <div class="card-header" style="text-align: center">VACANTE</div>
-                <div class="card-body">
-                    <h5 class="card-title">Desarrollador de software</h5>
-                    <p class="card-text">$1.000.000 + Salud y pensión</p> 
-                    <a class="btn btn-primary" href="https://forms.gle/VJ3z9mRBRPGPwSGR8">Registro aquí</a>
-               </div>
-            </div>
+                    style="max-width: 18rem; background-color: #663F3F; margin: 1%">
+                    <div class="card-header" style="text-align: center">VACANTE</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Desarrollador de software</h5>
+                        <p class="card-text">$1.000.000 + Salud y pensión</p>
+                        <a class="btn btn-primary" target="blank" href="https://forms.gle/VJ3z9mRBRPGPwSGR8">Registro aquí</a>
+                    </div>
+                </div>
 
 
             </div>
@@ -73,12 +99,11 @@
     </div>
 
     <footer class="py-4  text-white-50" style="background-color:#1A1C35">
-            <div class="container text-center">
-                <small>Sitio web en construcción</small>
-       
-            </div>
-        </footer>
+        <div class="container text-center">
+            <small>Sitio web en construcción</small>
 
+        </div>
+    </footer>
 
 
 </body>
